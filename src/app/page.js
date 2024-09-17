@@ -1,18 +1,18 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-export default function Home() {
+
+export default async function Home() {
+
   return (
     <>
-    <header>
-      Header
-    </header>
-      <main className="">
-      
+      <Header />
+      <main id="MainContent" className="MainContent">
+
       </main>
-      <footer className="">
-        Footer
-      </footer>
+      <Footer />
     </>
   );
 }
