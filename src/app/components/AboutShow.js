@@ -3,7 +3,7 @@ export default async function AboutShow({ customClass, heading, subHeading, desc
         <>
             <div className="section-about section">
                 <div className="page-width">
-                    <div className="about-heading">
+                    <div className="about-heading center">
                         {heading && (
                             <h2 className="abt-heading center">{heading}</h2>
                         )}
@@ -12,12 +12,12 @@ export default async function AboutShow({ customClass, heading, subHeading, desc
                         )}
                     </div>
                     {description && (
-                        <div className="about-description">
+                        <div className="about-description center">
                             <p>{description}</p>
                         </div>
                     )}
                     {btn_title && (
-                        <div className="action-button center">
+                        <div className="about-action-button center">
                             <a href={btn_url?btn_url:"#"} className="button ">{btn_title}</a>
                         </div>
                     )}

@@ -75,14 +75,14 @@ export default async function Footer() {
                         </div>
                     </div>
                     {footer_link_lists && footer_link_lists.length && (
-                        footer_link_lists.map((ftmenu) => {
+                        footer_link_lists.map((ftmenu,index) => {
                             return (
-                                <div className="footer-grid-item">
+                                <div key={`${ftmenu}-${index}`} className="footer-grid-item">
                                     <h2 className="footer-menu-heading">{ftmenu.heading}</h2>
                                     <ul className="footer-block__details-content list-unstyled">
                                         {ftmenu.link_list.map((link_list,index) => {
                                             return (
-                                                <li>
+                                                <li key={`${link_list}-${index}`}>
                                                     <Link key={`footer-menu-${index}`} href={link_list.link} className="link  link--text list-menu__item list-menu__item--link">
                                                       <span>{link_list.title}</span>  
                                                     </Link >
@@ -96,15 +96,6 @@ export default async function Footer() {
                         })
 
                     )}
-                    <div className="footer-grid-item">
-
-                    </div>
-                    <div className="footer-grid-item">
-
-                    </div>
-                    <div className="footer-grid-item">
-
-                    </div>
                 </div>
             </footer>
         </div>

@@ -5,7 +5,7 @@ export default async function HeroBanner({ customClass, heading, description, bt
     return (
         <>
             <div className="section-hero section">
-                <div className={`main-section-hero ${customClass}`}>
+                <div className={`main-section-hero ${customClass ? customClass:''}`}>
                     <div className="page-width">
                         <div class="section-row">
                             <div className="section-content">

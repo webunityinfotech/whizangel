@@ -1,79 +1,50 @@
 @font-face {
-  font-family: 'Satoshi Regular';
+  font-family: 'Satoshi';
   font-style: normal;
   font-weight: normal;
-  src: local('Satoshi Regular'), url('./fonts/Satoshi-Regular.woff') format('woff');
+  src: local('Satoshi'), url('./fonts/Satoshi-Regular.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Satoshi Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Satoshi Italic'), url('./fonts/Satoshi-Italic.woff') format('woff');
-}
+
 
 @font-face {
-  font-family: 'Satoshi Light';
+  font-family: 'Satoshi';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 100;
   src: local('Satoshi Light'), url('./fonts/Satoshi-Light.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Satoshi Light Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Satoshi Light Italic'), url('./fonts/Satoshi-LightItalic.woff') format('woff');
-}
 
 @font-face {
-  font-family: 'Satoshi Medium';
+  font-family: 'Satoshi';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   src: local('Satoshi Medium'), url('./fonts/Satoshi-Medium.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Satoshi Medium Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Satoshi Medium Italic'), url('./fonts/Satoshi-MediumItalic.woff') format('woff');
-}
 
 @font-face {
-  font-family: 'Satoshi Bold';
+  font-family: 'Satoshi';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   src: local('Satoshi Bold'), url('./fonts/Satoshi-Bold.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Satoshi Bold Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Satoshi Bold Italic'), url('./fonts/Satoshi-BoldItalic.woff') format('woff');
-}
 
 @font-face {
-  font-family: 'Satoshi Black';
+  font-family: 'Satoshi';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bolder;
   src: local('Satoshi Black'), url('./fonts/Satoshi-Black.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Satoshi Black Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Satoshi Black Italic'), url('./fonts/Satoshi-BlackItalic.woff') format('woff');
-}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --color-foreground:0,0,0;
   --page-width:160rem;
-  --font-heading-family:'Satoshi Regular', sans-serif;;
+  --font-heading-family:'Satoshi', sans-serif;;
   --font-heading-style:normal;
   --font-heading-weight:400;
   --footer-background:#EDF4FF;
@@ -436,4 +407,105 @@ svg.aerrow-svg {
 .count-column h5 {
   font-size: 1.8rem;
   font-weight: 600;
+}
+.abt-heading {
+  font-size: 35px;
+  font-weight: 900;
+  padding-bottom: 19px;
+  position:relative;
+  display: inline-block;
+}
+.abt-subheading {
+  font-size: 24px;
+  line-height: 1.33;
+  font-weight: 600;
+  margin-top: 3.2rem;
+  color: #5A42E2;
+}
+.section-about {
+  padding: 4.7rem 0;
+}
+.about-description p {
+  font-size: 18px;
+  line-height: 2;
+  max-width: 1292px;
+  margin: 0 auto;
+}
+.about-description {
+  margin-top: 3.6rem;
+}
+.about-action-button .button {
+  font-size: 19px;
+}
+.about-action-button {
+  margin-top: 4.6rem;
+  margin-bottom: 4.6rem;
+}
+.abt-heading:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.79px;
+  background: #FF652F;
+  left: 0;
+  right: 0;
+}
+.index-image-withcontent .iwts-content {
+    flex: 0 0 50%;
+    max-width: 596px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+.iwts-content h2 {
+  font-size: 45px;
+  font-weight: 900;
+}
+.index-image-withcontent .iwts-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 50px;
+}
+.index-image-withcontent .section-iwts-inner {
+  background: linear-gradient(180deg, #CCFD564D, #E7FFAD4D);
+}
+.itws-description {
+  font-size: 16px;
+  line-height: 2;
+  margin: 5.6rem 0;
+}
+.index-image-withcontent .section-row {
+  align-items: center;
+  justify-content: space-between;
+}
+.iwts-image img {
+  display: block;
+}
+.iwts-action-buttons .button {
+  font-size: 19px;
+  font-weight: 500;
+}
+.index-image-youth .iwts-content {
+  flex: 0 0 50%;
+  max-width: 676px;
+  padding: 62px 0;
+  padding-right: 94px;
+}
+
+.index-image-youth .iwts-image {
+  flex: 0 0 50%;
+  max-width: 737px;
+}
+
+.index-image-youth .section-row {
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.index-image-youth .section-iwts-inner {
+  background: linear-gradient(180deg, #A48AFB33, #C8B7FF33);
+}
+.index-image-withcontent,.index-image-youth {
+  margin-bottom: 5.5rem;
 }
