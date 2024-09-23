@@ -6,6 +6,10 @@ import HeroBanner from "./components/HeroBanner";
 import GlobalCount from "./components/GlobalCount";
 import AboutShow from "./components/AboutShow";
 import ImageWithContent from "./components/ImageWithContent";
+import CompanyAgenda from "./components/CompanyAgenda";
+import FutureFounders from "./components/FutureFounder";
+import BackgroundVideo from "./components/BackgroundVideo";
+import Marquee from "./components/Marqueesection";
 
 
 export default async function Home() {
@@ -26,6 +30,10 @@ Our mission is to bridge the gap between these promising young innovators and th
         <ImageWithContent image_name="youth_entrepreneur" customClass="index-image-youth" heading="Every youth can become an Entrepreneur" description="Every young individual has the potential to become an entrepreneur when given the right support and opportunities. By fostering an entrepreneurial mindset early on and providing access to education, mentorship, and resources, we empower youth to innovate, create jobs, and drive economic growth. With encouragement to explore new ideas, take calculated risks, and learn from challenges, young people can evolve into resilient problem-solvers and impactful changemakers." 
         btn_title="Read More"
         />
+        <CompanyAgenda customClass="company-agenda" />
+        <FutureFounders />
+        <BackgroundVideo />
+        <Marquee />
       </main>
       <Footer />
     </>

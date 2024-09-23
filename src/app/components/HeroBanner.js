@@ -16,7 +16,7 @@ export default async function HeroBanner({ customClass, heading, description, bt
                                         <div className="hero-action-buttons">
                                             <a href={btn_url ? btn_url : "#"} className="button">{btn_title}
                                                 <svg className="aerrow-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <path d="M21 12L16 7M21 12L16 17M21 12H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M21 12L16 7M21 12L16 17M21 12H3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </a>
                                         </div>
