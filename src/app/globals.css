@@ -316,6 +316,29 @@ svg.aerrow-svg {
 }
 .brand-logo {
   max-width: 222px;
+  margin-bottom: 3.3rem;
+}
+.footer-block__details-content .list-menu__item {
+  font-size: 18px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+  padding-bottom: 70px;
+  border-top: 1.5px solid #5A42E2;
+}
+.policies-links a {
+  font-weight: 500;
+  color: #5A42E2;
+  margin-left: 9rem;
+}
+.copypright-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #5A42E2;
 }
 .list-unstyled {
   margin: 0;
@@ -339,6 +362,48 @@ svg.aerrow-svg {
 }
 .top-footer-header {
   padding: 7rem 0;
+}
+.footer-inline-link a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+}
+.footer-inline-link {
+  margin-bottom: 2.4rem;
+}
+.brand-contact .social-share {
+  display: flex;
+  align-items: center;
+  padding-top:1rem;
+  gap: 25px;
+}
+
+.social-share p {
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2.5px solid #5A42E2;
+}
+
+.social-linklist {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-linklist .socialIcon {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.social-linklist .socialIcon svg {
+  width: 100%;
+  height: 100%;
 }
 .section-row{
   display: flex;
@@ -565,10 +630,10 @@ svg.aerrow-svg {
   font-weight: 900;
 }
 .icon-rows {
-  --gap:35px;
+  --gap:36px;
   display: flex;
   margin-top:5rem;
-  gap: 36px;
+  gap: var(--gap);
 }
 p.ic-title {
   font-size: 20px;
@@ -609,6 +674,18 @@ p.ic-title {
   object-fit: cover;
   display: block;
 }
+
+.section-background-video .playVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
 .marquee-container {
   width: 100%;
   overflow: hidden; /* Hide overflow */
@@ -631,4 +708,23 @@ p.ic-title {
   font-size: 18px;
   color: #333;
   padding: 0 50px; /* Padding around each item */
+}
+.marqueeElement img {
+  height: auto;
+  max-width: 100%;
+}
+.marqueeElement {
+  display: inline-flex;
+  align-items: center;
+}
+
+.marqudot {
+  width: 11px;
+  height: 11px;
+  background: #4F515F;
+  border-radius: 50%;
+  margin: 0 3.2rem;
+}
+.section-marqueesection{
+  padding: 7rem 0;
 }

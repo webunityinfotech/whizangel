@@ -1,38 +1,43 @@
-"use client"
+'use client'
+import Image from 'next/image';
 import { useEffect } from 'react';
+import Marquee from "react-fast-marquee"
 
-const Marquee = () => {
-    useEffect(() => {
-        const marquee = document.querySelector('.marquee-content');
-        let scrollAmount = 0;
+const Marqueesection = ({customClass}) => {
 
-        const animateMarquee = () => {
-            scrollAmount -= 1; // Speed of the scrolling
-            if (Math.abs(scrollAmount) >= marquee.scrollWidth) {
-                scrollAmount = 0; // Reset scroll to the beginning
-            }
-            marquee.style.transform = `translateX(${scrollAmount}px)`;
-            requestAnimationFrame(animateMarquee);
-        };
-
-        animateMarquee(); // Start animation
-    }, []);
 
     return (
-        <div className="marquee-container">
-            <div className="marquee-content">
-                <span>Welcome to the Scrolling Marquee Section!</span>
-                <span>Check out our latest updates!</span>
-                <span>New products are available now!</span>
-                <span>Welcome to the Scrolling Marquee Section!</span>
-                <span>Check out our latest updates!</span>
-                <span>New products are available now!</span>
-                <span>Welcome to the Scrolling Marquee Section!</span>
-                <span>Check out our latest updates!</span>
-                <span>New products are available now!</span>
-            </div>
+        <div className={`section-marqueesection ${customClass ? customClass : ''}`}>
+            <Marquee>
+                <MarqueeElement imageName="InfinityParker" maxWidth={255} />
+                <MarqueeElement imageName="Wheelapp" maxWidth={245} />
+                <MarqueeElement imageName="HighCountryClub" maxWidth={273} />
+                <MarqueeElement imageName="Kinetic" maxWidth={222} />
+                <MarqueeElement imageName="Grasshopper" maxWidth={260} />
+                <MarqueeElement imageName="MajentaMantis" maxWidth={242} />
+            </Marquee>
         </div>
+
+
     );
 };
 
-export default Marquee;
+function MarqueeElement({ maxWidth, imageName }) {
+    return (
+        <>
+            <div className='marqueeElement'>
+                <Image
+                    src={`/images/${imageName}.png`}
+                    alt="marquee"
+                    width={maxWidth}
+                    height={300}
+                />
+                <div className='marqudot'>
+
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Marqueesection;
