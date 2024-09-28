@@ -15,7 +15,7 @@ export default async function Header() {
         },
         {
             title: "About Us",
-            link: "/aboutus"
+            link: "/about"
         },
         {
             title: "Projects",

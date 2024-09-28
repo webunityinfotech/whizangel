@@ -300,7 +300,11 @@ svg.aerrow-svg {
 .header__heading-logo-wrapper {
   max-width: 207px;
 }
-
+.section-header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
 .footer-grid {
   display: flex;
   flex-wrap: wrap;

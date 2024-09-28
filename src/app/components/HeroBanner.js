@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 
-export default async function HeroBanner({ customClass, heading, description, btn_title, btn_url }) {
+export default async function HeroBanner({ customClass, heading, description, btn_title, btn_url ,image_name }) {
     return (
         <>
             <div className="section-hero section">
@@ -24,9 +24,10 @@ export default async function HeroBanner({ customClass, heading, description, bt
                                 </div>
 
                             </div>
-                            <div className="section-image">
+                            {image_name && (
+                                <div className="section-image">
                                 <Image
-                                    src="/images/hero-banner-home.png"
+                                    src={`/images/${image_name}.png`}
                                     alt="Hero Banner"
                                     width={900}
                                     height={800}
@@ -34,6 +35,8 @@ export default async function HeroBanner({ customClass, heading, description, bt
                                     priority
                                 />
                             </div>
+                            )}
+                            
                         </div>
                     </div>
                 </div>
