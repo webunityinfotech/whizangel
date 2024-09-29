@@ -295,10 +295,21 @@ svg.aerrow-svg {
   border-bottom: 1px solid #000;
 }
 .header-drawer-header .header__heading-link {
-  max-width: 246px;
+  max-width: 200px;
 }
-
+.page-not-found {
+  min-height: 26vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oveflow-hidden {
+  overflow: hidden;
+}
 .header-drawer-header .header__heading-link img {
+  display: block;
+}
+.header__heading-logo-wrapper img {
   display: block;
 }
 .header-drawer-header .close-icon {

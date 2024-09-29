@@ -246,6 +246,10 @@
         flex: 0 0 calc(50% - var(--gap) / 2);
         max-width: calc(50% - var(--gap) / 2);
     }
+    .playVideo svg {
+        width: 50px;
+        height: 50px;
+    }
     .count-column {
         flex: 0 0 100%;
         max-width: 100%;
@@ -287,5 +291,11 @@
     .footer-inline-link a svg {
         width: 30px;
         height: 30px;
+    }
+    .header-menu-open svg{
+        width: 2rem;
+    }
+    .section-future-founder .section-heading h2 {
+        font-size: 28px;
     }
 }

@@ -1,9 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-
-
-export default async function Header() {
+export default function Header() {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false); 
+    const toggleDrawer = () => {
+        setIsDrawerOpen(!isDrawerOpen);
+        document.body.classList.toggle('oveflow-hidden')
+    };
     let nav_menu = [
         {
             title: "Entrepreneurs",
@@ -30,7 +35,7 @@ export default async function Header() {
         <div className="section-header">
             <div className="header-wrapper">
                 <header className="header page-width header-logo-left">
-                    <div className="header-menu-open">
+                    <div className="header-menu-open" onClick={toggleDrawer}>
                         <IconHamburger />
                     </div>
                     <h1 className="header__heading">
@@ -57,7 +62,7 @@ export default async function Header() {
                     </nav>
                     <div className="header-icons"></div>
                 </header>
-                <div className="header-menu-drawer">
+                <div className={`header-menu-drawer ${isDrawerOpen ? "active" : ""}`}>
                     <div className="header-drawer-header">
                         <Link href="/" className="header__heading-link">
                             <Image
@@ -68,7 +73,7 @@ export default async function Header() {
                                 priority
                             />
                         </Link>
-                        <button className="close-icon">
+                        <button className="close-icon" onClick={toggleDrawer}>
                             <IconClose />
                         </button>
                     </div>
