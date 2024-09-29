@@ -89,7 +89,6 @@ export default async function Footer() {
                                 alt="Whizangl footer"
                                 width={500}
                                 height={300}
-                                layout="responsive"
                             />
                         </div>
                         <div className="brand-contact">
@@ -108,9 +107,9 @@ export default async function Footer() {
                             <div className="social-share">
                                 <p>Follow Us</p>
                                 <div className="social-linklist">
-                                    {social_link_list && social_link_list.map((sc_link_list) => {
+                                    {social_link_list && social_link_list.map((sc_link_list,index) => {
                                         return (
-                                            <a target="_blank" href={sc_link_list.link} className="socialIcon">
+                                            <a key={`${sc_link_list}-${index}`} target="_blank" href={sc_link_list.link} className="socialIcon">
                                                 {sc_link_list.icon}
                                             </a>
                                         )
@@ -160,9 +159,9 @@ export default async function Footer() {
 function CopyRightIcon() {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-            <g clip-path="url(#clip0_741_4979)">
-                <path d="M18.5188 32.4072C26.1894 32.4072 32.4077 26.1889 32.4077 18.5183C32.4077 10.8477 26.1894 4.62939 18.5188 4.62939C10.8482 4.62939 4.62988 10.8477 4.62988 18.5183C4.62988 26.1889 10.8482 32.4072 18.5188 32.4072Z" stroke="currentColor" stroke-width="2.46914" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M23.1484 21.9906C22.4195 22.9621 21.4035 23.6796 20.2442 24.0416C19.0849 24.4035 17.841 24.3916 16.6889 24.0074C15.5368 23.6232 14.5347 22.8863 13.8246 21.901C13.1145 20.9158 12.7324 19.732 12.7324 18.5175C12.7324 17.303 13.1145 16.1193 13.8246 15.134C14.5347 14.1487 15.5367 13.4118 16.6888 13.0276C17.841 12.6435 19.0848 12.6315 20.2441 12.9934C21.4034 13.3554 22.4195 14.0729 23.1484 15.0443" stroke="currentColor" stroke-width="2.46914" stroke-linecap="round" stroke-linejoin="round" />
+            <g clipPath="url(#clip0_741_4979)">
+                <path d="M18.5188 32.4072C26.1894 32.4072 32.4077 26.1889 32.4077 18.5183C32.4077 10.8477 26.1894 4.62939 18.5188 4.62939C10.8482 4.62939 4.62988 10.8477 4.62988 18.5183C4.62988 26.1889 10.8482 32.4072 18.5188 32.4072Z" stroke="currentColor" strokeWidth="2.46914" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M23.1484 21.9906C22.4195 22.9621 21.4035 23.6796 20.2442 24.0416C19.0849 24.4035 17.841 24.3916 16.6889 24.0074C15.5368 23.6232 14.5347 22.8863 13.8246 21.901C13.1145 20.9158 12.7324 19.732 12.7324 18.5175C12.7324 17.303 13.1145 16.1193 13.8246 15.134C14.5347 14.1487 15.5367 13.4118 16.6888 13.0276C17.841 12.6435 19.0848 12.6315 20.2441 12.9934C21.4034 13.3554 22.4195 14.0729 23.1484 15.0443" stroke="currentColor" strokeWidth="2.46914" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <defs>
                 <clipPath id="clip0_741_4979">

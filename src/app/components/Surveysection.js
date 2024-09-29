@@ -45,7 +45,6 @@ export default async function Surveysection({ customClass, heading, description,
                                             alt="Hero Banner"
                                             width={900}
                                             height={800}
-                                            layout="responsive"
                                             priority
                                         />
                                     </div>

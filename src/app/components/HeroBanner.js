@@ -7,7 +7,7 @@ export default async function HeroBanner({ customClass, heading, description, bt
             <div className="section-hero section">
                 <div className={`main-section-hero ${customClass ? customClass:''}`}>
                     <div className="page-width">
-                        <div class="section-row">
+                        <div className="section-row">
                             <div className="section-content">
                                 <div className="section-content-inner">
                                     <h2 className="hxl hero-heading" dangerouslySetInnerHTML={{ __html: heading }} />
@@ -31,7 +31,6 @@ export default async function HeroBanner({ customClass, heading, description, bt
                                     alt="Hero Banner"
                                     width={900}
                                     height={800}
-                                    layout="responsive"
                                     priority
                                 />
                             </div>

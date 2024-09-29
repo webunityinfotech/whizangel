@@ -34,7 +34,6 @@ export default async function CompanyAgenda({ customClass }) {
                                         alt={block.title}
                                         width={600}
                                         height={600}
-                                        layout="responsive"
                                     />
                                     
                                 </div>

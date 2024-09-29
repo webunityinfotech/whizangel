@@ -31,7 +31,6 @@ export default async function ImageWithContent({ customClass, heading, descripti
                                         alt="Hero Banner"
                                         width={900}
                                         height={800}
-                                        layout="responsive"
                                     />
                                 </div>
                             )}
