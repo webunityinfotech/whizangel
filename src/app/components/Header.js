@@ -35,9 +35,7 @@ export default function Header() {
         <div className="section-header">
             <div className="header-wrapper">
                 <header className="header page-width header-logo-left">
-                    <div className="header-menu-open" onClick={toggleDrawer}>
-                        <IconHamburger />
-                    </div>
+                    
                     <h1 className="header__heading">
                         <Link href="/" className="header__heading-link">
                             <div className="header__heading-logo-wrapper">
@@ -60,7 +58,11 @@ export default function Header() {
                             </ul>
                         )}
                     </nav>
-                    <div className="header-icons"></div>
+                    <div className="header-icons">
+                        <div className="header-menu-container" onClick={toggleDrawer}>
+                            <IconHamburger />
+                        </div>
+                    </div>
                 </header>
                 <div className={`header-menu-drawer ${isDrawerOpen ? "active" : ""}`}>
                     <div className="header-drawer-header">
@@ -94,15 +96,8 @@ export default function Header() {
 
 function IconHamburger() {
     return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            focusable="false"
-            className="icon icon-hamburger"
-            fill="none"
-            viewBox="0 0 18 16"
-        >
-            <path d="M1 .5a.5.5 0 100 1h15.71a.5.5 0 000-1H1zM.5 8a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1A.5.5 0 01.5 8zm0 7a.5.5 0 01.5-.5h15.71a.5.5 0 010 1H1a.5.5 0 01-.5-.5z" fill="currentColor" />
+        <svg  className="icon icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
+        <path d="M1 11H19M1 6H19M1 1H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
 
     )

@@ -1,0 +1,36 @@
+.marqueeElement img {
+    height: auto;
+    max-width: 100%;
+}
+
+.marqueeElement {
+    display: inline-flex;
+    align-items: center;
+}
+
+.marqudot {
+    width: 11px;
+    height: 11px;
+    background: #4F515F;
+    border-radius: 50%;
+    margin: 0 3.2rem;
+}
+
+.section-marqueesection {
+    padding: 7rem 0;
+}
+
+@media screen and (max-width: 749px) {
+
+    .marqueeElement img {
+        max-width: 200px;
+    }
+
+    .marqudot {
+        margin: 0 1.2rem;
+    }
+
+    .section-marqueesection {
+        padding: 2rem 0;
+    }
+}

@@ -1,3 +1,4 @@
+import './techatwhizangle.css';
 export default async function TeachAtWhizangle({ customClass, heading }) {
     const column_lists = [
         {

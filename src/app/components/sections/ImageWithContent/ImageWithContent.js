@@ -1,5 +1,6 @@
-export default async function Trustedpartner({ customClass, heading, description, btn_title, btn_url, image_name }) {
-    const icon_list = ['OmegaMillion', 'InfinityParker', 'Wheelapp', 'HighCountryClub', 'Kinetic', 'YellowBook', 'BlueEverest', 'MajentaMantis', 'Calypso', 'Grasshopper', 'ColdGecko', 'MajentaMantis', 'EdgeKart']
+import Image from "next/image";
+import './Imagewithcontent.css';
+export default async function ImageWithContent({ customClass, heading, description, btn_title, btn_url ,image_name }) {
     return (
         <>
             <div className={`section-image-with-text section ${customClass ? customClass : ''}`}>
@@ -23,18 +24,17 @@ export default async function Trustedpartner({ customClass, heading, description
                                     </div>
                                 )}
                             </div>
-                            <div className="iwts-image">
-                                <div className="iwts-icons-raw">
-                                    {icon_list && icon_list.map((icon_name, index) => {
-                                        return (
-                                            <div key={`icon-${index}`} className="iwts-icon">
-                                                <img src={`/images/${icon_name}.png`} />
-                                            </div>
-                                        );
-                                    })}
+                            {image_name && (
+                                <div className="iwts-image">
+                                    <Image
+                                        src={`/images/${image_name}.png`}
+                                        alt="Hero Banner"
+                                        width={900}
+                                        height={800}
+                                    />
                                 </div>
+                            )}
 
-                            </div>
                         </div>
                     </div>
                 </div>

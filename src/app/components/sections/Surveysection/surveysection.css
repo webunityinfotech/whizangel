@@ -1,0 +1,111 @@
+.ss-row{
+    display:flex;
+    flex-wrap: wrap;
+    --ss-gap: 20px;
+    gap: var(--ss-gap);
+}
+.ss-column{
+    flex: 0 0 calc(50% - var(--ss-gap) / 2);
+    max-width: calc(50% - var(--ss-gap) / 2);
+}
+.globals-surevey-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-survey-section {
+    background-color: #EDFFF7;
+    padding:7rem 0;
+}
+
+.ss-img-inner h2 {
+    font-size: 40px;
+    line-height: 1.75;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+.ss-img-inner h2:nth-child(2) {
+    text-align: right;
+}
+.img-content-column .ss-img-inner{
+    margin-bottom: 3.8rem;
+}
+.ss-content-inner .ss-content-title {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+.survey-box {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 4rem;
+}
+
+.survey-box h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.16;
+}
+.ss-content-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.survey-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #535353;
+}
+.survey-inside {
+    max-width: 157px;
+}
+.img-content-column .ss-column-image, .img-content-column .ss-img-inner {
+    max-width: 570px;
+}
+@media screen and (max-width: 1360px) {
+    .ss-img-inner h2 {
+        font-size: 35px;
+    }
+    .iwts-icons-raw {
+        --gap: 2%;
+        gap: 50px var(--gap);
+    }
+}
+@media screen and (max-width: 989px) {
+    .ss-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .img-content-column .ss-column-image, .img-content-column .ss-img-inner {
+        max-width: 100%;
+    }
+    .globals-surevey-row {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .main-survey-section {
+        padding: 3rem 0;
+    }
+}
+@media screen and (max-width: 749px) {
+    .ss-img-inner h2 {
+        font-size: 28px;
+    }
+    .survey-box h2 {
+        font-size: 22spx;
+    }
+    .survey-box {
+        padding: 0 10px;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .survey-box {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .ss-img-inner h2 {
+        font-size: 22px;
+    }
+}

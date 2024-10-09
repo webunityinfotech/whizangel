@@ -1,4 +1,5 @@
 import Image from "next/image"
+import './companyagenda.css'
 
 export default async function CompanyAgenda({ customClass }) {
     const list_blocks = [

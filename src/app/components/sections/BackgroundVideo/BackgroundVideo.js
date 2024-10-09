@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import { useRef, useState } from "react";
+import './backgroundvideo.css';
 
 export default  function BackgroundVideo({ customClass }) {
     const videoRef = useRef(null); 

@@ -1,0 +1,127 @@
+.section-future-founder {
+    background: #FBF7F0;
+    padding: 7rem 0;
+}
+
+.section-future-founder .section-heading {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+.section-description {
+    max-width: 1154px;
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 30px 0;
+}
+
+.section-future-founder .section-heading h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.icon-rows {
+    --gap: 36px;
+    display: flex;
+    margin-top: 5rem;
+    gap: var(--gap);
+}
+
+p.ic-title {
+    font-size: 20px;
+    font-family: var(--font-heading-family);
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0;
+}
+
+.icon-block {
+    flex: 0 0 calc(20% - var(--gap)* 4 / 5);
+    max-width: calc(20% - var(--gap)* 4 / 5);
+    background: #FFFFFF;
+    border-radius: 17px;
+    box-shadow: 6px 1px 70px 6px rgba(0, 0, 0, 0.16);
+    padding: 26px;
+    color: #7543FF;
+    text-align: center;
+}
+
+.sub-heading {
+    max-width: 409px;
+    margin-left: auto;
+}
+
+.sub-heading svg {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .icon-rows {
+        --gap: 20px;
+    }
+
+    p.ic-title {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+}
+@media screen and (max-width: 989px) {
+    .icon-rows {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icon-block svg {
+        max-width: 40px;
+        height: auto;
+    }
+    .icon-block {
+        padding:10px;
+        flex: 0 0 calc(33.33% - var(--gap)* 2 / 3);
+        max-width: calc(33.33% - var(--gap)* 2 / 3);
+    }
+
+    .section-future-founder .section-heading h2 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-future-founder .section-heading h2 {
+        font-size: 28px;
+    }
+    .section-future-founder .section-heading {
+        max-width: 382px;
+        margin: 0 auto;
+    }
+    .sub-heading {
+        max-width: 52%;
+        margin-left: auto;
+    }
+    .section-future-founder {
+        padding: 3rem 0;
+    }
+    .section-description{
+        padding: 10px 0;
+    }
+    .icon-rows {
+        --gap: 13px;
+        margin-top: 2rem;
+    }
+    .icon-block svg {
+        max-width: 20px;
+        height: auto;
+    }
+    .icon-block svg:first-child {
+        max-width: 28px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-future-founder .section-heading h2{
+        font-size: 20px;
+    }
+    .section-description{
+        font-size: 14px;
+    }
+}

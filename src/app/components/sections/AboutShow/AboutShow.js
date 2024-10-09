@@ -1,7 +1,8 @@
+import './aboutshow.css'
 export default async function AboutShow({ customClass, heading, subHeading, description, btn_title, btn_url }) {
     return (
         <>
-            <div className="section-about section">
+            <div className={`section-about section ${customClass ? customClass:''}`}>
                 <div className="page-width">
                     <div className="about-heading center">
                         {heading && (
