@@ -1,7 +1,7 @@
 import Image from "next/image";
-import EducatingEntrepreneurs from "./svg/EducatingEntrepreneurs";
+import EducatingEntrepreneurs from "../../svg/EducatingEntrepreneurs";
 
-
+import './futurefounders.css'
 export default async function FutureFounders({ customClass }) {
     const icon_blocks = [
         {

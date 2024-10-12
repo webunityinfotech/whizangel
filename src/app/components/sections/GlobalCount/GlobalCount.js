@@ -1,4 +1,4 @@
-
+import './globlecount.css'
 export default async function GlobalCount() {
     return(
         <>

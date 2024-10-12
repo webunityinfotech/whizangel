@@ -1,7 +1,8 @@
 'use client'
 import Image from 'next/image';
 import { useEffect } from 'react';
-import Marquee from "react-fast-marquee"
+import Marquee from "react-fast-marquee";
+import './marqueesection.css';
 
 const Marqueesection = ({customClass}) => {
 

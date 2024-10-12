@@ -19,17 +19,20 @@
         display: none !important;
     }
 }
+
 @media screen and (max-width: 749px) {
     .button {
-        padding: 1rem 1.6rem;
-        font-size: 1.8rem;
+        padding: 0.7rem 1.9rem;
+        font-size: 1.2rem;
     }
+
     .aerrow-svg {
         width: 2rem;
         height: 2rem;
         margin-left: 1rem;
     }
 }
+
 @media screen and (min-width: 990px) {
     .large-up-hide {
         display: none !important;
@@ -37,7 +40,7 @@
 }
 
 @media screen and (max-width: 989px) {
-    .header-menu-open {
+    .header-menu-container {
         display: block;
     }
 
@@ -47,7 +50,7 @@
 
     .header-menu-open,
     .header-icons {
-        flex: 0 0 90px;
+        flex: 0 0 auto;
     }
 
     .header__heading {
@@ -55,25 +58,29 @@
     }
 
     .header {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
+
 @media screen and (max-width: 1360px) {
     .footer-grid-item.brand-information {
         flex: 0 0 calc(31% - var(--ft-gap)* 3 / 4);
         max-width: calc(31% - var(--ft-gap)* 3 / 4);
     }
+
     .footer-grid-item {
         flex: 0 0 calc(23% - var(--ft-gap)* 3 / 4);
         max-width: calc(23% - var(--ft-gap)* 3 / 4);
     }
 }
-@media screen and (max-width: 749px) {
-    
-}
+
+@media screen and (max-width: 749px) {}
+
 @media screen and (max-width: 480px) {
-    .header-menu-open, .header-icons {
+
+    .header-menu-open,
+    .header-icons {
         flex: 0 0 30px;
     }
 }
@@ -85,143 +92,69 @@
     .index-hero-banner .section-content-inner {
         margin-right: 0;
     }
+
     .index-hero-banner .section-image {
         padding-top: 0;
     }
+
     .main-section-hero {
         padding: 2rem 0;
     }
+
     .section-content h2 {
         font-size: 45px;
     }
-    .index-image-withcontent .iwts-image{
-        padding: 0 0;
-    }
-    .index-image-youth .iwts-content {
-        flex: 0 0 50%;
-        max-width: 676px;
-        padding: 30px 0;
-        padding-right: 0;
-    }
-    .agenda-description h2 {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-    .icon-rows {
-        --gap: 20px;
-    }
-    p.ic-title {
-        font-size: 16px;
-        margin: 12px 0;
-    }
-    
+
+   
+
+   
+   
+
+   
+
 }
+
 @media screen and (max-width: 989px) {
-    .background-video-wrapper{
-        padding-top: 50%;
-    }
+   
     .section-marqueesection {
         padding: 3rem 0;
     }
-    .index-hero-banner .section-image {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .index-hero-banner .section-content {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .count-column h2 {
-        font-size: 3.5rem;
-    }
-    .global-row{
-        padding: 25px;
-    }
-    .index-image-withcontent .iwts-image {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    
-    .index-image-withcontent .iwts-content {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 3rem;
-    }
-    .itws-description {
-        margin: 1.6rem 0;
-    }
-    .index-image-youth .iwts-content {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 3rem;
-    }
-    .index-image-youth .iwts-image {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .agenda-block {
-        flex: 0 0 400px;
-        max-width: 400px;
-    }
-    .section-company-agenda .section-row {
-        gap: 21px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-    }
-    .icon-rows {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .icon-block {
-        flex: 0 0 calc(33.33% - var(--gap)* 2 / 3);
-        max-width: calc(33.33% - var(--gap)* 2 / 3);
-    }
-    .section-future-founder .section-heading h2{
-        font-size: 45px;
-    }
+
     .footer-grid-item.brand-information {
         flex: 0 0 calc(50% - var(--ft-gap)* 1 / 2);
         max-width: calc(50% - var(--ft-gap)* 1 / 2);
     }
+
     .footer-grid-item {
         flex: 0 0 calc(50% - var(--ft-gap)* 1 / 2);
         max-width: calc(50% - var(--ft-gap)* 1 / 2);
         margin-bottom: 3rem;
     }
-    .top-footer-header{
-        padding:3rem 0;
+
+    .top-footer-header {
+        padding: 3rem 0;
     }
+
+
+  
+
    
+
 }
+
 @media screen and (max-width: 749px) {
-    .ic-title {
-        font-size: 14px;
-    }
-    .icon-rows{
-        --gap: 10px;
-    }
-    .icon-block {
-        padding: 15px;
-    }
-    .section-marqueesection {
-        padding: 2rem 0;
-    }
-    .marqueeElement img {
-        max-width: 200px;
-    }
-    .marqudot{
-        margin: 0 1.2rem;
-    }
+
     .footer-grid-item.brand-information {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .footer-grid-item {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 3rem;
     }
+
     .footer-bottom {
         flex-wrap: wrap;
         justify-content: center;
@@ -229,72 +162,77 @@
         padding-top: 17px;
         padding-bottom: 23px;
     }
+
     .policies-links {
         flex: 0 0 100%;
         justify-content: center;
         gap: 30px;
     }
+
     .policies-links a {
         margin-left: 0;
     }
-}
-@media screen and (max-width: 568px) {
-    .global-row {
-        flex-wrap: wrap;
+
+    .index-hero-banner .section-image {
+        margin-top: 2rem;
     }
+
+}
+
+@media screen and (max-width: 568px) {
+    
+
     .icon-block {
         flex: 0 0 calc(50% - var(--gap) / 2);
         max-width: calc(50% - var(--gap) / 2);
     }
-    .playVideo svg {
-        width: 50px;
-        height: 50px;
-    }
-    .count-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 3rem;
-    }
+
+   
+
+    
+
 }
+
 @media screen and (max-width: 480px) {
     .section-content h2 {
-        font-size: 28px;
+        font-size: 21px;
         margin-bottom: 2rem;
     }
-    .about-action-button .button {
-        font-size: 16px;
+
+    .index-hero-banner p {
+        font-size: 12px;
     }
-    .section-about {
-        padding: 1.7rem 0;
+
+    .hero-action-buttons {
+        margin-top: 2rem;
     }
-    .iwts-content h2{
-        font-size: 28px;
-    }
-    .iwts-action-buttons .button{
-        font-size:16px;
-    }
-    .index-image-withcontent .iwts-content{
-        padding:2rem;
-    }
-    .index-image-youth .iwts-content{
-        padding:2rem;
-    }
+
     .icon-block {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .footer-grid-item{
+        margin-bottom: 0;
+    }
+    .footer-block__details-content {
+        margin-top: 2rem;
+    }
+
     .brand-logo {
         max-width: 170px;
         width: 100%;
         margin-bottom: 1.3rem;
     }
+
     .footer-inline-link a svg {
         width: 30px;
         height: 30px;
     }
-    .header-menu-open svg{
+
+    .header-menu-open svg {
         width: 2rem;
     }
+
     .section-future-founder .section-heading h2 {
         font-size: 28px;
     }

@@ -1,4 +1,6 @@
 import Image from "next/image"
+import './surveysection.css'
+import '../FutureFounders/futurefounders.css'
 
 export default async function Surveysection({ customClass, heading, description, image_name }) {
     const global_data = [

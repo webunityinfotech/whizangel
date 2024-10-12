@@ -1,0 +1,124 @@
+.section-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-hero-banner .section-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.index-hero-banner .section-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.main-section-hero {
+    background-color: #EDF4FF;
+}
+
+.section-content h2 {
+    font-weight: 700;
+}
+
+.blue-text {
+    color: #5A42E2;
+}
+
+.index-hero-banner .section-content-inner {
+    margin-right: -29%;
+}
+
+.index-hero-banner .section-row {
+    align-items: center;
+}
+
+.index-hero-banner p {
+    max-width: 704px;
+}
+
+.hero-heading {
+    margin-bottom: 3.8rem;
+}
+
+.hero-action-buttons {
+    margin-top: 4rem;
+}
+
+.index-hero-banner .section-image {
+    padding-top: 10.5rem;
+}
+
+.about-hero-banner .section-content,.about-hero-banner .section-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about-hero-banner .section-row {
+    align-items: center;
+    padding: 5rem 0;
+}
+@media screen and (max-width: 1280px) {
+    .index-hero-banner .section-content-inner {
+        margin-right: 0;
+    }
+
+    .index-hero-banner .section-image {
+        padding-top: 0;
+    }
+
+    .main-section-hero {
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width: 989px) {
+    .index-hero-banner .section-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .index-hero-banner p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .index-hero-banner .section-content {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hero-action-buttons {
+        text-align: center;
+    }
+    .section-content h2 {
+        text-align: center;
+    }
+    .section-image img {
+        width: 100%;
+    }
+    .about-hero-banner .section-content p{
+        text-align:center;
+    }
+    .about-hero-banner .section-content, .about-hero-banner .section-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-hero-banner .section-content{
+        padding-bottom: 1rem;
+    }
+    .about-hero-banner .section-row{
+        padding: 0rem 0;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .hero-action-buttons {
+        margin-top: 2rem;
+    }
+    .button .aerrow-svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-left: 0.6rem;
+        transition: 0.3s;
+    }
+    .about-hero-banner .section-content h2{
+        font-size:22px;
+    }
+}

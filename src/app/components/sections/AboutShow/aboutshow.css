@@ -1,0 +1,114 @@
+.section-about {
+    padding: 4.7rem 0;
+}
+
+.abt-heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.79px;
+    background: #FF652F;
+    left: 0;
+    right: 0;
+}
+
+.abt-heading {
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 19px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.abt-subheading {
+    font-size: 24px;
+    line-height: 1.33;
+    font-weight: 600;
+    margin-top: 3.2rem;
+    color: #5A42E2;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 2;
+    max-width: 1292px;
+    margin: 0 auto;
+}
+
+.about-description {
+    margin-top: 3.6rem;
+}
+
+.about-action-button .button {
+    font-size: 19px;
+}
+
+.about-action-button {
+    margin-top: 4.6rem;
+    margin-bottom: 4.6rem;
+}
+.about-action-button{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 989px) {
+    .aboutpage-abs .abt-heading {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .about-action-button {
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+    }
+    .aboutpage-abs .abt-heading {
+        font-size: 16px;
+        padding-bottom: 5px;
+
+    }
+    .aboutpage-abs .abt-heading:after{
+        height: 1.53px;
+    }
+    .aboutpage-abs.section-about {
+        padding: 2.5rem 0;
+    }
+    .aboutpage-abs .about-description {
+        margin-top: 1.8rem;
+    }
+    .aboutpage-abs .about-description p{
+        font-size: 14px;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .about-action-button .button {
+        font-size: 16px;
+    }
+    .abt-heading:after{
+        height: 2px;
+    }
+    .section-about {
+        padding-top:1.3rem;
+        padding-bottom: 2.6rem;
+    }
+    .index-abt-show .abt-heading.center {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .index-abt-show .about-description p{
+        font-size: 12px;
+    }
+    .index-abt-show .abt-subheading.center {
+        font-size: 12px;
+        margin-top: 1.3rem;
+    }
+    .about-description {
+        margin-top: 1.8rem;
+    }
+    
+    
+}

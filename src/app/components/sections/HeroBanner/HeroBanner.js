@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import './herobanner.css'
 
 export default async function HeroBanner({ customClass, heading, description, btn_title, btn_url ,image_name }) {
     return (
