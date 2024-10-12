@@ -42,7 +42,7 @@ export default function Header() {
                         <Link href="/" className="header__heading-link">
                             <div className="header__heading-logo-wrapper">
                                 <Image
-                                    src="/images/header-logo.png"
+                                    src="/images/Whizangle_logo.png"
                                     alt="Responsive Image"
                                     width={500}
                                     height={300}
