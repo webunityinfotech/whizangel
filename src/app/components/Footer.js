@@ -85,7 +85,7 @@ export default async function Footer() {
                     <div className="footer-grid-item brand-information">
                         <div className="brand-logo">
                             <Image
-                                src="/images/header-logo.png"
+                                src="/images/whizangle_logo.png"
                                 alt="Whizangl footer"
                                 width={500}
                                 height={300}
