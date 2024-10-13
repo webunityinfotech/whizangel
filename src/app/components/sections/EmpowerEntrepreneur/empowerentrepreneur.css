@@ -1,0 +1,9 @@
+.sec-ee-row{
+    --gap:50px;
+    display: flex;
+    gap:var(--gap);
+}
+.sec-image-block,.sec-content-block{
+    flex:0 0 calc(50% - var(--gap)/2);
+    max-width: calc(50% - var(--gap)/2);
+}

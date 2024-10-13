@@ -1,0 +1,19 @@
+.start-journey-row {
+    display: flex;
+    align-items: center;
+    padding: 45px 70px;
+    background-color: #F4FFDB;
+    justify-content: space-between;
+}
+.start-journey-row .ssj-content {
+    max-width: 700px;
+}
+
+.ssj-content h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.ssj-content p {
+    font-size: 22px;
+}

@@ -10,6 +10,10 @@ import CompanyAgenda from "./components/sections/CompanyAgenda/CompanyAgenda";
 import FutureFounders from "./components/sections/FutureFounders/FutureFounder";
 import BackgroundVideo from "./components/sections/BackgroundVideo/BackgroundVideo";
 import Marquee from "./components/sections/Marqueesection/Marqueesection";
+import JoinWhizangle from "./components/sections/Joinwhizangle/JoinWhizangle";
+import Whizanglejourney from "./components/sections/WhizangleJourney/Whizanglejourney";
+import StartJourney from "./components/sections/StartJourney/StartJourney";
+import EmpowerEntrepreneur from "./components/sections/EmpowerEntrepreneur/EmpowerEntrepreneur";
 
 
 export default async function Home() {
@@ -28,9 +32,13 @@ Our mission is to bridge the gap between these promising young innovators and th
         <ImageWithContent image_name="youth_entrepreneur" customClass="index-image-youth" heading="Every youth can become an Entrepreneur" description="Every young individual has the potential to become an entrepreneur when given the right support and opportunities. By fostering an entrepreneurial mindset early on and providing access to education, mentorship, and resources, we empower youth to innovate, create jobs, and drive economic growth. With encouragement to explore new ideas, take calculated risks, and learn from challenges, young people can evolve into resilient problem-solvers and impactful changemakers." 
         btn_title="Read More"
         />
+        <JoinWhizangle customClass="index-join-whizangle" heading="Who can join Whizangel ?" description="WhizAngel is open to young entrepreneurs with innovative ideas and a passion for entrepreneurship." btn_title="Start Your Journey" />
+        <Whizanglejourney heading="Your Journey Begins Here" description="At WhizAngel, we offer a wealth of resources and opportunities to help you transform your ideas into impactful ventures. From mentorship programs to funding opportunities, we provide the tools you need to succeed." btn_title="Start Your Journey" />
+        <StartJourney heading="How to Pitch Us" description="During the application process, upload a short video, up to 3 minutes, to pitch your idea and showcase your vision to our sponsors." btn_title="Start Your Journey" />
         <CompanyAgenda customClass="company-agenda" />
         <FutureFounders />
-        <BackgroundVideo />
+        <EmpowerEntrepreneur />
+        <BackgroundVideo customClass="index-bg-video" />
         <Marquee />
     </>
   );
