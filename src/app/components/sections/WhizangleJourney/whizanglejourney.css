@@ -4,6 +4,7 @@
     justify-content: space-between;
     background: #E4F2FF;
     padding: 45px 80px;
+    gap:20px;
 }
 .swaj-content h2 {
     font-size: 45px;
@@ -16,6 +17,7 @@
 }
 .swaj-content {
     max-width: 706px;
+    width: 100%;
 }
 .swa-content-box {
     max-width: 564px;
@@ -67,4 +69,64 @@
 .swaj-box-item p {
     font-size: 15px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .swaj-row{
+        padding: 40px 40px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .swaj-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:40px;
+    }
+    .swaj-content{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 749px) {
+    .swaj-content p {
+        font-size: 18px;
+        margin: 20px 0px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .swaj-content h2 {
+        font-size: 34px;
+    }
+    .swaj-row {
+        padding: 30px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .swaj-box-item h2 {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .swaj-box-item{
+        flex-basis: calc(50% - 5px);
+        padding: 20px;
+    }
+    .swaj-box-item h2:after {
+        height: 3px;
+    }
+    .swaj-box-item p {
+        font-size: 12px;
+    }
+    .swa-content-box-list{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .swaj-box-item {
+        flex-basis: calc(100% - 5px);
+    }
+    .swaj-box-item:nth-child(odd) {
+        transform: translate(0, 0px);
+    }
+    .swaj-box-item:nth-child(even) {
+        transform: translate(0, 0px);
+    }
 }

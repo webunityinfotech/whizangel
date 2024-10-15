@@ -36,7 +36,6 @@ Our mission is to bridge the gap between these promising young innovators and th
         <Whizanglejourney heading="Your Journey Begins Here" description="At WhizAngel, we offer a wealth of resources and opportunities to help you transform your ideas into impactful ventures. From mentorship programs to funding opportunities, we provide the tools you need to succeed." btn_title="Start Your Journey" />
         <StartJourney heading="How to Pitch Us" description="During the application process, upload a short video, up to 3 minutes, to pitch your idea and showcase your vision to our sponsors." btn_title="Start Your Journey" />
         <CompanyAgenda customClass="company-agenda" />
-        <FutureFounders />
         <EmpowerEntrepreneur />
         <BackgroundVideo customClass="index-bg-video" />
         <Marquee />
