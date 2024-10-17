@@ -2,7 +2,6 @@
     --gap:50px;
     display: flex;
     gap:var(--gap);
-    align-items: center;
     padding: 60px 80px;
     background-color: #F0FBF0;
 }
@@ -49,4 +48,55 @@
     left: -30px;
     top: 50%;
     transform: translate(0, -50%);
+}
+@media screen and (max-width: 1080px) {
+    .sec-ee-row{
+        padding: 30px 40px
+    }
+    .sec-ic-heading {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+    .sec-ic-description {
+        font-size: 18px;
+    }
+    .sec-ic-bullet-box h4 {
+        font-size: 20px;
+    }
+    .sec-ic-bullet-box p {
+        font-size: 16px;
+    }
+    .sec-ic-bullet-box {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 989px) {
+    .sec-ee-row{
+        padding: 20px 20px;
+        --gap: 20px;
+        flex-wrap: wrap;
+    }
+    .sec-image-block, .sec-content-block {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .section-empower-entrepreneur {
+        padding: 40px 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .sec-ic-bullet-box{
+        padding-left: 30px;
+    }
+    .sec-ic-heading {
+        font-size: 20px;
+    }
+    .sec-ic-description {
+        font-size: 15px;
+        margin: 1rem 0;
+    }
+    .sec-ic-bullet-box h4:before {
+        border: 3px solid #000;
+        left: -22px;
+    }
 }

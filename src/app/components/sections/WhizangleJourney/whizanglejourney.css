@@ -82,9 +82,6 @@
         justify-content: center;
         gap:40px;
     }
-    .swaj-content{
-        text-align: center;
-    }
 }
 @media screen and (max-width: 749px) {
     .swaj-content p {
@@ -122,6 +119,9 @@
 @media screen and (max-width: 480px) {
     .swaj-box-item {
         flex-basis: calc(100% - 5px);
+    }
+    .swaj-content h2 {
+        font-size: 24px;
     }
     .swaj-box-item:nth-child(odd) {
         transform: translate(0, 0px);
