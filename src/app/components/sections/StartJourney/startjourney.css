@@ -1,0 +1,52 @@
+.start-journey-row {
+    display: flex;
+    align-items: center;
+    padding: 45px 70px;
+    background-color: #F4FFDB;
+    justify-content: space-between;
+}
+.start-journey-row .ssj-content {
+    max-width: 700px;
+}
+
+.ssj-content h2 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.ssj-content p {
+    font-size: 22px;
+}
+.section-start-journey {
+    margin-bottom: 10rem;
+}
+@media screen and (max-width: 1280px) {
+    .start-journey-row {
+        padding: 40px 40px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .start-journey-row{
+        flex-wrap: wrap;
+        gap:40px;
+    }   
+}
+@media screen and (max-width: 989px) {
+    .section-start-journey {
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .ssj-content h2 {
+        font-size: 24px;
+    }
+    .start-journey-row {
+        gap:20px;
+    }
+    .ssj-content p{
+        margin-top: 20px;
+    }
+    .start-journey-row {
+        padding: 30px 30px;
+    }
+}
